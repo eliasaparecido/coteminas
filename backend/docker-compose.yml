@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    entrypoint: dockerize -wait tcp://db:5432 -timeout 40s ./.docker/entrypoint.sh
+    container_name: app-coteminas
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/app
+    depends_on: 
+      - db
+
+  db:
+    build: .docker/postgres
+    container_name: db-coteminas
+    restart: always
+    tty: true
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=coteminas
+    ports:
+      - "5433:5432"
+    volumes:
+      - .docker/dbdata:/var/lib/postgresql/data
