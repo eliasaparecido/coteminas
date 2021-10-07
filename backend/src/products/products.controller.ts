@@ -12,6 +12,42 @@ export class ProductsController {
     return this.productsService.create(createProductDto);
   }
 
+  @Get('seeds')
+  getSeeds() {
+    try {
+      let allProducts = [];
+      for (let index = 0; index < 100; index++) {
+          let faker = require('faker');
+          let description = faker.commerce.productName() + ' ' + faker.commerce.productMaterial() + ' ' + faker.random.word();
+          let price =  faker.commerce.price();
+          let promotion_price =  price - 19;
+          let category =  faker.commerce.productMaterial();
+
+          let urlimage = faker.image.imageUrl();
+          let urlimage2 = faker.image.imageUrl();
+
+          const product = {
+            description: description,
+            price: price,
+            promotion_price: promotion_price,
+            category: category,
+            product_photos:[
+              {url: urlimage},
+              {url: urlimage2}
+            ]
+          };
+
+          allProducts.push(product);
+          
+          this.productsService.create(product);
+      }
+      return allProducts
+    } catch (error) {
+      return error;
+    }
+  }
+
+
   @Get()
   findAll() {
     return this.productsService.findAll();
