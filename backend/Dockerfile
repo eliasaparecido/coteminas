@@ -11,9 +11,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 
 
-RUN mkdir -p /home/node/app
+
 WORKDIR /home/node/app
 
-COPY --chown=node:node package.json .
-
-COPY --chown=node:node . .
