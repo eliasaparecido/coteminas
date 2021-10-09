@@ -1,27 +1,46 @@
-## Coteminas
+# Coteminas
 
+## O projeto foi feito com nodejs utilizando o nestjs como framework no backend no frontend foi utilizado React.
+## A estrutura foi feito com docker e docker-compose.
 
-# O projeto foi feito com docker.
+# Instruções
 
-# Clonar o projeto
+## Clonar o projeto
 
-## Backend
+# Backend
 
-# entrar na pasta backend
+## entrar na pasta backend
 
-# criar a pasta dbdata dentro de .docker
+## criar a pasta dbdata dentro de .docker
 
-# rodar o docker-compose up -d --build
+## rodar o docker-compose up -d --build
 
-# Entrar no bash com docker-compose exec app bash e rodar a migration
+## Entrar no bash com docker-compose exec app bash e rodar:
 
-# npm run typeorm migration:run
+## npm install
 
-# Alimentar banco de dados dando um post em /products/seeds
+## npm run typeorm migration:run
+
+## Alimentar a tabela produtos dando um get em /products/seeds
+
+# Frontend
+
+## entrar na pasta frontend
+
+## rodar o docker-compose up -d --build
+
+# Hospedagem
+
+## O projeto está hospedado na Amazon AWS
 
 ## Frontend
 
-# entrar na pasta frontend
+<a href="http://ec2-18-231-107-221.sa-east-1.compute.amazonaws.com:3001" target="_blank">Frontend</a>
 
-# rodar o docker-compose up -d --build
+## Backend
+
+<a href="http://ec2-18-231-107-221.sa-east-1.compute.amazonaws.com:3002" target="_blank">Backend</a>
+
+
+
 
