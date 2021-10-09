@@ -1,6 +1,7 @@
 FROM node:14.15.4-alpine3.12
 
 RUN apk add --no-cache bash
+RUN apk update
 
 RUN npm i -g @nestjs/cli@7.6.0
 
@@ -11,4 +12,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 USER node
 
-WORKDIR /home/node/app
+WORKDIR /home/node
