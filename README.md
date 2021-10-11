@@ -41,3 +41,22 @@
 ## entrar na pasta frontend
 
 ## rodar o docker-compose up -d --build
+
+# CRUD
+
+## O projeto tem o CRUD, só não está disponível no frontend
+
+## Listar
+## GET /products
+
+## Adicionar
+## POST /products
+
+## Editar
+## PATCH /products/{ID}
+
+## Buscar com ID
+## GET /products/{ID}
+
+## Delete
+## DELETE /products/{ID}
