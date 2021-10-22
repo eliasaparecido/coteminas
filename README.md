@@ -2,8 +2,6 @@
 
 ## O projeto foi feito com NodeJS, utilizando o NestJS como framework, no backend, no frontend foi utilizado ReactJS.
 
-# Tirei o serviço do ar, cas
-
 # Hospedagem
 
 ## O projeto está hospedado na Amazon AWS
