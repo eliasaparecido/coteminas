@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const url = () => {
 
-  const apiprod = 'http://ec2-18-231-107-221.sa-east-1.compute.amazonaws.com:3002/';
+  const apiprod = 'http://ec2-18-230-11-12.sa-east-1.compute.amazonaws.com:3002/';
   const apilocal = '127.0.0.1:3002/';
 
   let base = '';
