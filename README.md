@@ -1,18 +1,6 @@
-# Coteminas
+# Lista de Produtos
 
 ## O projeto foi feito com NodeJS, utilizando o NestJS como framework, no backend, no frontend foi utilizado ReactJS.
-
-# Hospedagem
-
-## O projeto está hospedado na Amazon AWS
-
-## Frontend
-
-<a href="http://ec2-18-230-11-12.sa-east-1.compute.amazonaws.com:3001" target="_blank">Frontend</a>
-
-## Backend
-
-<a href="http://ec2-18-230-11-12.sa-east-1.compute.amazonaws.com:3002" target="_blank">Backend</a>
 
 ## A estrutura foi feito com docker e docker-compose.
 
